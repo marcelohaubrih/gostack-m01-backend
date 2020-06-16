@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const { request } = require('express');
 const { uuid, isUuid } = require('uuidv4');
 
 const app = express();
-
+app.use(cors());
 // Habilitando JSON no Body
 app.use(express.json());
 
